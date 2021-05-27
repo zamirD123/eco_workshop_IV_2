@@ -1,0 +1,651 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={IV PART 3},
+  pdfauthor={Doron Zamir},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{IV PART 3}
+\author{Doron Zamir}
+\date{5/9/2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{getting-things-ready}{%
+\section{Getting things ready}\label{getting-things-ready}}
+
+\hypertarget{load-packages}{%
+\subsection{Load Packages}\label{load-packages}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\FunctionTok{require}\NormalTok{(}\StringTok{"pacman"}\NormalTok{)) }\FunctionTok{install.packages}\NormalTok{(}\StringTok{"pacman"}\NormalTok{)}
+
+\NormalTok{pacman}\SpecialCharTok{::}\FunctionTok{p\_load}\NormalTok{(}
+\NormalTok{  tidyverse,}
+\NormalTok{  vip,}
+\NormalTok{  here,}
+\NormalTok{  readxl,}
+\NormalTok{  DataExplorer,}
+\NormalTok{  GGally,}
+\NormalTok{  np,}
+\NormalTok{  ivtools}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{load-data}{%
+\subsection{Load Data}\label{load-data}}
+
+Using data from Card (1993) that can be found
+\href{https://davidcard.berkeley.edu/data_sets.html}{here}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{schooling\_raw }\OtherTok{\textless{}{-}} \FunctionTok{read.table}\NormalTok{(}\StringTok{"Data/nls.dat"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{as\_data\_frame}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{change-variables-names}{%
+\subsection{Change Variables Names}\label{change-variables-names}}
+
+\hypertarget{tidy-up-the-data}{%
+\subsection{Tidy up the data}\label{tidy-up-the-data}}
+
+Selecting variables to work with, remove missing data, and create a new
+dummy for collage proximity (regardless if it's a 4 year or 2 year
+collage) for later analysis
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{schooling }\OtherTok{\textless{}{-}}\NormalTok{ schooling\_raw }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(}
+\NormalTok{    ed76,     }\CommentTok{\# Education {-} The treatment (t\_i)}
+\NormalTok{    nearc4,   }\CommentTok{\# 4 year collage proximity {-} The IV (u\_i)  }
+\NormalTok{    lwage78,  }\CommentTok{\# log wage in 78 {-} The output (y\_i)}
+\NormalTok{    black,    }\CommentTok{\# Dummy for black {-} control (w\_i)}
+\NormalTok{    age76     }\CommentTok{\# Age at 76       {-} control (w\_i) }
+\NormalTok{    ) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(lwage78 }\SpecialCharTok{!=} \StringTok{"."}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}                      \CommentTok{\# remove missing values}
+  \FunctionTok{mutate\_at}\NormalTok{(}\FunctionTok{vars}\NormalTok{(lwage78),}\FunctionTok{funs}\NormalTok{(as.numeric)) }\SpecialCharTok{\%\textgreater{}\%}    \CommentTok{\#make lwage numeric}
+  \FunctionTok{mutate\_at}\NormalTok{(}\FunctionTok{vars}\NormalTok{(black,nearc4),}\FunctionTok{funs}\NormalTok{(as.factor)) }\CommentTok{\#set dummys as factor}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exploratory-data-analysis}{%
+\subsection{Exploratory Data Analysis}\label{exploratory-data-analysis}}
+
+using \texttt{DataExplorar}and \texttt{GGally} packages
+
+\hypertarget{histograms}{%
+\subsubsection{Histograms}\label{histograms}}
+
+looking at histograms of \texttt{lwage78,\ ed76}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot\_histogram}\NormalTok{(schooling)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-3-1..svg}
+
+It seems that there are a lot of observations with education less than
+10, which might add noise to our analysis. we might need to consider
+that later.
+
+\hypertarget{correlations}{%
+\subsubsection{Correlations:}\label{correlations}}
+
+I used \texttt{ggparis()} from \texttt{GGally} package to plot every
+pair of variables.
+
+This is for the entire sample:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{schooling }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(age76)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggpairs}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-4-1..svg}
+
+Since we seen that \texttt{ed76} has a long tail from the left, let's
+see how's the correlation differ when trimming it
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{schooling }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(ed76 }\SpecialCharTok{\textgreater{}=}\DecValTok{10}\NormalTok{ ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(age76)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggpairs}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-5-1..svg}
+
+Looking at the differences between the two plots, it seems that when
+trimming for education \textgreater{} 10, we get a stronger correlation
+between the instrument and the treatment. Then, trimming the data will
+lead to better results:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{schooling }\OtherTok{\textless{}{-}}\NormalTok{ schooling }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(ed76 }\SpecialCharTok{\textgreater{}=} \DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{non-parametric-estimation}{%
+\section{Non Parametric Estimation}\label{non-parametric-estimation}}
+
+\hypertarget{general---boundaries-for-the-output}{%
+\subsubsection{General - boundaries for the
+output}\label{general---boundaries-for-the-output}}
+
+Set \(K_0, K_1\) s.t \(\forall i, y_i (t) \in [K_0, K_1]\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{k\_0 }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(schooling}\SpecialCharTok{$}\NormalTok{lwage78)}
+\NormalTok{k\_1 }\OtherTok{\textless{}{-}} \FunctionTok{max}\NormalTok{(schooling}\SpecialCharTok{$}\NormalTok{lwage78)}
+\end{Highlighting}
+\end{Shaded}
+
+This will be useful for later calculations.
+
+\hypertarget{iv-assumption}{%
+\subsection{IV assumption}\label{iv-assumption}}
+
+First, we assume that the connection between education and wage is the
+same, regardless of collage proximity. More specially, we want to check
+if \[E(lwage78|ed76, nearc4 =1) = E(lwage78|ed76, nearc4 =0)\]
+
+let's check if this stands in the sample:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{collage.labs }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"Far from Collage"}\NormalTok{, }\StringTok{"Close to Collage"}\NormalTok{)}
+\FunctionTok{names}\NormalTok{(collage.labs) }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{)}
+
+\NormalTok{schooling }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(ed76,lwage78)) }\SpecialCharTok{+}
+    \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}
+    \FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{formula =}\NormalTok{ y }\SpecialCharTok{\textasciitilde{}}\NormalTok{ x) }\SpecialCharTok{+}
+    \FunctionTok{facet\_wrap}\NormalTok{(}\StringTok{"nearc4"}\NormalTok{, }\AttributeTok{labeller =}\FunctionTok{labeller}\NormalTok{(}\AttributeTok{nearc4 =}\NormalTok{ collage.labs))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-8-1..svg}
+
+seems like the assumption holds: the trend line for
+(\texttt{lwage78\ \textasciitilde{}\ ed76}) looks the same in both
+plots, i.e.~return for schooling doesn't seem to differ between those
+who grew up close to 4 years collage and those who didn't.
+
+\hypertarget{calculating-bounds}{%
+\subsubsection{Calculating bounds}\label{calculating-bounds}}
+
+I calculated bounds related to the IV assumption. That is, for every
+treatment level \(t \in T\), I calculate bounds \(UB(t),LB(t)\) such
+that:
+
+\[
+LB(t) \equiv \max_{u \in V} E[y|z=t, v= u] \cdot P(z=t|v=u) +K_0 \cdot P(z \ne t|v = u) \\
+UB(t) \equiv \min_{u \in V} E[y|z=t, v= u] \cdot P(z=t|v=u) +K_1 \cdot P(z \ne t|v = u) 
+\]
+
+note that in this section, the treatment is the years of education,
+i.e., \(t \in T = \{10,11,12...\}\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{iv\_bounds }\OtherTok{\textless{}{-}}\NormalTok{ schooling }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(black, age76)) }\SpecialCharTok{\%\textgreater{}\%}     \CommentTok{\# Remove controls}
+  \FunctionTok{group\_by}\NormalTok{(ed76, nearc4) }\SpecialCharTok{\%\textgreater{}\%}       \CommentTok{\# Grouping by treatment and variable {-} (t\_i,u\_i)}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{exp =} \FunctionTok{mean}\NormalTok{(lwage78),           }\CommentTok{\# calculate expected value of Y for each group}
+    \AttributeTok{count =} \FunctionTok{n}\NormalTok{()) }\SpecialCharTok{\%\textgreater{}\%}               \CommentTok{\# counting observation in each group}
+  \FunctionTok{pivot\_wider}\NormalTok{(                     }\CommentTok{\# splitting count and exp vars by u\_i }
+    \AttributeTok{values\_from =} \FunctionTok{c}\NormalTok{(exp,count),}
+    \AttributeTok{names\_from =}\NormalTok{ nearc4,}
+    \AttributeTok{values\_fill =} \DecValTok{0}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}            \CommentTok{\# replacing missing data(no obs) with 0}
+\NormalTok{    ungroup }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(                          }\CommentTok{\# calculating probabilities}
+    \AttributeTok{prob\_0 =}\NormalTok{ count\_0 }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(count\_0),}
+    \AttributeTok{prob\_1 =}\NormalTok{ count\_1 }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(count\_1)}
+\NormalTok{    ) }\SpecialCharTok{\%\textgreater{}\%}
+    \FunctionTok{mutate}\NormalTok{(                                         }\CommentTok{\#calculating bounds}
+      \AttributeTok{l\_bound\_0 =}\NormalTok{ prob\_0 }\SpecialCharTok{*}\NormalTok{ exp\_0 }\SpecialCharTok{+}\NormalTok{ k\_0 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_0), }\CommentTok{\#lower bound for u\_i = 0 }
+      \AttributeTok{l\_bound\_1 =}\NormalTok{ prob\_1 }\SpecialCharTok{*}\NormalTok{ exp\_1 }\SpecialCharTok{+}\NormalTok{ k\_0 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_1), }\CommentTok{\#lower bound for u\_i = 1}
+      \AttributeTok{u\_bound\_0 =}\NormalTok{ prob\_0 }\SpecialCharTok{*}\NormalTok{ exp\_0 }\SpecialCharTok{+}\NormalTok{ k\_1 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_0), }\CommentTok{\#upper bound for u\_i = 0}
+      \AttributeTok{u\_bound\_1 =}\NormalTok{ prob\_1 }\SpecialCharTok{*}\NormalTok{ exp\_1 }\SpecialCharTok{+}\NormalTok{ k\_1 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_1)  }\CommentTok{\#upper bound for u\_i = 1}
+\NormalTok{      ) }\SpecialCharTok{\%\textgreater{}\%}
+    \FunctionTok{group\_by}\NormalTok{(ed76) }\SpecialCharTok{\%\textgreater{}\%}                              \CommentTok{\#grouping by ed76 level}
+    \FunctionTok{mutate}\NormalTok{(}\AttributeTok{l\_bound =} \FunctionTok{max}\NormalTok{(l\_bound\_0,l\_bound\_1),      }\CommentTok{\#computing bounds}
+           \AttributeTok{u\_bound =} \FunctionTok{min}\NormalTok{(u\_bound\_0,u\_bound\_1)) }\SpecialCharTok{\%\textgreater{}\%} 
+    \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}} \FunctionTok{contains}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"\_0"}\NormalTok{,}\StringTok{"\_1"}\NormalTok{))) }\CommentTok{\# removing uneeded variables}
+\end{Highlighting}
+\end{Shaded}
+
+this are the results for upper and lower bounds:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{print}\NormalTok{(iv\_bounds)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 9 x 3
+## # Groups:   ed76 [9]
+##    ed76 l_bound u_bound
+##   <int>   <dbl>   <dbl>
+## 1    10    4.77    8.11
+## 2    11    4.79    8.09
+## 3    12    5.32    7.44
+## 4    13    4.86    8.04
+## 5    14    4.87    8.06
+## 6    15    4.81    8.11
+## 7    16    4.99    7.97
+## 8    17    4.80    8.14
+## 9    18    4.85    8.11
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(iv\_bounds,}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{as.factor}\NormalTok{(ed76), }\AttributeTok{color =} \FunctionTok{as.factor}\NormalTok{(ed76))) }\SpecialCharTok{+}
+  \FunctionTok{geom\_errorbar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{ymin =}\NormalTok{ l\_bound,}\AttributeTok{ymax =}\NormalTok{ u\_bound, }\AttributeTok{width =} \FloatTok{0.3}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{( }\AttributeTok{x=} \StringTok{"ed76"}\NormalTok{, }\AttributeTok{y =}\StringTok{"E[lwage78|ed76]"}\NormalTok{ ) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position =} \StringTok{"none"}\NormalTok{)}\SpecialCharTok{+}
+   \FunctionTok{scale\_colour\_brewer}\NormalTok{(}\AttributeTok{palette =} \StringTok{"Set1"}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-11-1..svg}
+
+we get quit big margins for every school of education. remembering that
+the two picks of \texttt{ed76}'s distribution were in 12 and 16 years,
+that what led into smaller margins for these levels of treatment.
+
+\hypertarget{calculating-treatment-effect-te}{%
+\subsubsection{Calculating treatment effect
+(TE)}\label{calculating-treatment-effect-te}}
+
+And for every \(t \in T\), meaning for every value of \texttt{ed76}, set
+the treatment effect to be the difference between having treatment
+\(t\), or \(t-1\).
+
+\[
+TE(t) = E[y(t) - y(t-1)] \\
+\forall t > inf(T): \\
+ LB(t) - UB(t-1) \le E[y(t) - y(t-1)] \le UB(t)- LB(t-1) 
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{iv\_te }\OtherTok{\textless{}{-}}\NormalTok{ iv\_bounds[}\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{,] }
+\FunctionTok{colnames}\NormalTok{(iv\_te) }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"ed76"}\NormalTok{,}\StringTok{"min\_te"}\NormalTok{,}\StringTok{"max\_te"}\NormalTok{ )  }\CommentTok{\# calculating the diff acording to the formula above}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\FunctionTok{length}\NormalTok{(iv\_te}\SpecialCharTok{$}\NormalTok{ed76)) \{}
+\NormalTok{  iv\_te}\SpecialCharTok{$}\NormalTok{min\_te[i] }\OtherTok{=}\NormalTok{ iv\_bounds}\SpecialCharTok{$}\NormalTok{l\_bound[i}\SpecialCharTok{+}\DecValTok{1}\NormalTok{] }\SpecialCharTok{{-}}\NormalTok{ iv\_bounds}\SpecialCharTok{$}\NormalTok{u\_bound[i]}
+\NormalTok{  iv\_te}\SpecialCharTok{$}\NormalTok{max\_te[i] }\OtherTok{=}\NormalTok{ iv\_bounds}\SpecialCharTok{$}\NormalTok{u\_bound[i}\SpecialCharTok{+}\DecValTok{1}\NormalTok{] }\SpecialCharTok{{-}}\NormalTok{ iv\_bounds}\SpecialCharTok{$}\NormalTok{l\_bound[i]}
+\NormalTok{\}}
+
+\NormalTok{iv\_te}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 8 x 3
+## # Groups:   ed76 [8]
+##    ed76 min_te max_te
+##   <int>  <dbl>  <dbl>
+## 1    11  -3.31   3.32
+## 2    12  -2.77   2.64
+## 3    13  -2.57   2.72
+## 4    14  -3.17   3.19
+## 5    15  -3.24   3.25
+## 6    16  -3.12   3.15
+## 7    17  -3.17   3.15
+## 8    18  -3.29   3.31
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{iv\_te }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}
+  \AttributeTok{x =} \FunctionTok{as.factor}\NormalTok{(ed76)}
+\NormalTok{)) }\SpecialCharTok{+} \FunctionTok{geom\_errorbar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}
+  \AttributeTok{ymin =}\NormalTok{ min\_te,}
+  \AttributeTok{ymax =}\NormalTok{ max\_te}
+\NormalTok{), }\AttributeTok{width=} \FloatTok{0.2}\NormalTok{, }\AttributeTok{color =} \StringTok{"red"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"ed76"}\NormalTok{, }\AttributeTok{y =} \StringTok{"TE(ed76)"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_hline}\NormalTok{(}\AttributeTok{yintercept=}\DecValTok{0}\NormalTok{, }\AttributeTok{linetype=}\StringTok{"dashed"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-13-1..svg}
+
+\hypertarget{discussion}{%
+\subsubsection{Discussion}\label{discussion}}
+
+The results does not seem to be useful: the margins for TE are very
+wide, and also contains negative effects, which are the opposite of what
+you would expect to get.
+
+In the next part, I'll try to better define the treatment, and use MIV
+assumption.
+
+\hypertarget{miv-assumption}{%
+\subsection{MIV assumption}\label{miv-assumption}}
+
+\hypertarget{redefining-the-problem}{%
+\subsubsection{Redefining the problem}\label{redefining-the-problem}}
+
+In the previous section, I tried to non parameticaly estimate the
+treatment effect of every year of extra education on wage, using
+proximity to 4 year collage as an IV.
+
+In this section, the output is still \texttt{lwage78}, but the treatment
+is now set to be attendance to collage. more specifically. let
+\(t \in \{0,1\}\) \[
+t = \cases { 0 & ed76 < 12 \\ 1 & ed76 > 12}
+\] So, we want to examine how going to collage affects wages, and we
+want to do that using porximity to collage as an IV. We will not limit
+proximity tocollage only to a 4 yrs collage, but rather to both 4 and 2
+yrs.
+
+\hypertarget{again-selecting-data}{%
+\subsubsection{Again, selecting data}\label{again-selecting-data}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{schooling\_miv }\OtherTok{\textless{}{-}}\NormalTok{ schooling\_raw }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(lwage78 }\SpecialCharTok{!=} \StringTok{"."}\NormalTok{,ed76 }\SpecialCharTok{\textgreater{}=} \DecValTok{10}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# remove missing values, only obs with 10 yrs or more of education}
+  \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{nearc =} \FunctionTok{as.numeric}\NormalTok{(nearc4 }\SpecialCharTok{|}\NormalTok{ nearc2), }\CommentTok{\#new dummy for collage proximity}
+    \AttributeTok{attendc =} \FunctionTok{as.numeric}\NormalTok{(ed76 }\SpecialCharTok{\textgreater{}} \DecValTok{12}\NormalTok{)      }\CommentTok{\#new dummy for collage attendence}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(}
+\NormalTok{    attendc,  }\CommentTok{\# attendenc to collage {-} The treatment (t\_i)}
+\NormalTok{    nearc,    }\CommentTok{\#  collage proximity {-} The IV (u\_i)  }
+\NormalTok{    lwage78,  }\CommentTok{\# log wage in 78 {-} The output (y\_i)}
+\NormalTok{    black     }\CommentTok{\# Dummy for black {-} control (w\_i)}
+\NormalTok{      ) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate\_at}\NormalTok{(}\FunctionTok{vars}\NormalTok{(lwage78),}\FunctionTok{funs}\NormalTok{(as.numeric)) }\SpecialCharTok{\%\textgreater{}\%}    \CommentTok{\#make lwage numeric}
+  \FunctionTok{mutate\_at}\NormalTok{(}\FunctionTok{vars}\NormalTok{(black,nearc,attendc),}\FunctionTok{funs}\NormalTok{(as.factor)) }\CommentTok{\#set dummys as factor}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{the-miv-assumption}{%
+\subsubsection{The MIV assumption}\label{the-miv-assumption}}
+
+the MIV assumption, in our case, suggest that proximity to collage is
+positively correlated with wages when controlling on education.
+Specially:
+
+\[
+\forall t \in T, \\ E[lwage78|z=t, nearc = 1 ] \ge E[lwage78|z=t, nearc = 0 ]
+\]
+
+There are many reasons to assume that, specially the environment and
+education might be better when closer to collage, due to academic staff
+leaving nearby. But, it's interesting to see if this is true in our
+sample:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{attend.labs }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"Didn\textquotesingle{}t went to collage"}\NormalTok{, }\StringTok{"Went to collage"}\NormalTok{)}
+\FunctionTok{names}\NormalTok{(attend.labs) }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"0"}\NormalTok{,}\StringTok{"1"}\NormalTok{)}
+
+\NormalTok{schooling\_miv }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(lwage78)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_density}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{facet\_grid}\NormalTok{(attendc}\SpecialCharTok{\textasciitilde{}}\NormalTok{nearc,}\AttributeTok{labeller =} \FunctionTok{labeller}\NormalTok{(}\AttributeTok{nearc =}\NormalTok{ collage.labs, }\AttributeTok{attendc =}\NormalTok{attend.labs))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-15-1..svg}
+
+The difference is notable, but not very significant.
+
+\hypertarget{miv-boundaries}{%
+\subsubsection{MIV Boundaries}\label{miv-boundaries}}
+
+I calculated bounds related to the MIV assumption. That is, for every
+treatment level \(t \in T\) , I calculate bounds \(UB(t),LB(t)\) such
+that:
+
+\[ LB(t) \equiv \sum_{u \in V}[P(v = u)\cdot   \max_{u_1 \le u} \underline{b}(t,u_1)]\\
+UB(t) \equiv \sum_{u \in V}[P(v = u)\cdot   \min_{u \le u_2}\bar{b}(t,u_2)]
+\]
+
+where
+
+\[
+\underline{b}(t,u) \equiv E[y|z=t, v= u] \cdot P(z=t|v=u) +K_0 \cdot P(z \ne t|v = u) \\
+\bar{b}(t,u)\equiv E[y|z=t, v= u] \cdot P(z=t|v=u) +K_1 \cdot P(z \ne t|v = u)
+\]
+
+note that since \(u \in \{0,1\}\), and our assumption that
+
+\[\forall t \in T, \\ E[lwage78|z=t, u = 1 ] \ge E[lwage78|z=t, u = 0 ]
+\]
+
+we get that:
+
+\[ LB(t) \equiv \sum_{u \in V}[P(v = u)\cdot \max_{u_1 \le u} \underline{b}(t,u_1)] = P(u =0) \cdot \max_{u_1 \le 0} \underline{b}(t,u_1)+ P(u =1) \cdot \max_{u_1 \le 1} \underline{b}(t,u_1) \\
+= P(u =0) \cdot \underline{b}(t,0)+ P(u =1) \cdot \max_{u_1 \le 1} \underline{b}(t,u_1)\\
+UB(t) \equiv \sum_{u \in V}[P(v = u)\cdot   \min_{u \le u_2}\bar{b}(t,u_2)] =P(u =0) \cdot \min_{0 \le u_2} \bar{b}(t,u_2)+ P(u =1) \cdot \min_{1 \le u_2} \bar{b}(t,u_2) \\ P(u =0) \cdot \min_{0 \le u_2} \bar{b}(t,u_2)+ P(u =1) \cdot  \bar{b}(t,1)
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{probs }\OtherTok{\textless{}{-}}\NormalTok{ schooling\_miv }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{select}\NormalTok{(nearc) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(nearc) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{count =} \FunctionTok{n}\NormalTok{()) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{mutate}\NormalTok{(}
+    \AttributeTok{prob =}\NormalTok{ count}\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(count)}
+\NormalTok{  )}
+\NormalTok{pr\_0 }\OtherTok{\textless{}{-}} \FunctionTok{as.numeric}\NormalTok{(probs[}\DecValTok{1}\NormalTok{,}\StringTok{"prob"}\NormalTok{])}
+\NormalTok{pr\_1 }\OtherTok{\textless{}{-}} \DecValTok{1}\SpecialCharTok{{-}}\NormalTok{ pr\_0}
+
+\NormalTok{MIV\_bounds\_all\_pop }\OtherTok{\textless{}{-}} 
+\NormalTok{  schooling\_miv }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(black)) }\SpecialCharTok{\%\textgreater{}\%}     \CommentTok{\# Remove controls}
+  \FunctionTok{group\_by}\NormalTok{(attendc, nearc) }\SpecialCharTok{\%\textgreater{}\%}     \CommentTok{\# Grouping by treatment and variable {-} (t\_i,u\_i)}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{exp =} \FunctionTok{mean}\NormalTok{(lwage78),           }\CommentTok{\# calculate expected value of Y for each group}
+    \AttributeTok{count =} \FunctionTok{n}\NormalTok{()) }\SpecialCharTok{\%\textgreater{}\%}               \CommentTok{\# counting observation in each group}
+  \FunctionTok{pivot\_wider}\NormalTok{(                     }\CommentTok{\# splitting count and exp vars by u\_i }
+    \AttributeTok{values\_from =} \FunctionTok{c}\NormalTok{(exp,count),}
+    \AttributeTok{names\_from =}\NormalTok{ nearc,}
+    \AttributeTok{values\_fill =} \DecValTok{0}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}            \CommentTok{\# replacing missing data(no obs) with 0}
+\NormalTok{    ungroup }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(                          }\CommentTok{\# calculating probabilities}
+    \AttributeTok{prob\_0 =}\NormalTok{ count\_0 }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(count\_0),}
+    \AttributeTok{prob\_1 =}\NormalTok{ count\_1 }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(count\_1)}
+\NormalTok{    ) }\SpecialCharTok{\%\textgreater{}\%}
+    \FunctionTok{mutate}\NormalTok{(                                         }\CommentTok{\#calculating bounds}
+      \AttributeTok{l\_bound\_0 =}\NormalTok{ prob\_0 }\SpecialCharTok{*}\NormalTok{ exp\_0 }\SpecialCharTok{+}\NormalTok{ k\_0 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_0), }\CommentTok{\#lower bound for u\_i = 0 }
+      \AttributeTok{l\_bound\_1 =}\NormalTok{ prob\_1 }\SpecialCharTok{*}\NormalTok{ exp\_1 }\SpecialCharTok{+}\NormalTok{ k\_0 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_1), }\CommentTok{\#lower bound for u\_i = 1}
+      \AttributeTok{u\_bound\_0 =}\NormalTok{ prob\_0 }\SpecialCharTok{*}\NormalTok{ exp\_0 }\SpecialCharTok{+}\NormalTok{ k\_1 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_0), }\CommentTok{\#upper bound for u\_i = 0}
+      \AttributeTok{u\_bound\_1 =}\NormalTok{ prob\_1 }\SpecialCharTok{*}\NormalTok{ exp\_1 }\SpecialCharTok{+}\NormalTok{ k\_1 }\SpecialCharTok{*}\NormalTok{(}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{prob\_1)  }\CommentTok{\#upper bound for u\_i = 1}
+\NormalTok{      ) }\SpecialCharTok{\%\textgreater{}\%}
+     \FunctionTok{group\_by}\NormalTok{(attendc) }\SpecialCharTok{\%\textgreater{}\%}             \CommentTok{\#grouping by attendence level}
+     \FunctionTok{mutate}\NormalTok{(                           }\CommentTok{\#computing bounds}
+       \AttributeTok{lb =}\NormalTok{ pr\_0 }\SpecialCharTok{*}\NormalTok{l\_bound\_0 }\SpecialCharTok{+}\NormalTok{pr\_1 }\SpecialCharTok{*} \FunctionTok{max}\NormalTok{(l\_bound\_0,l\_bound\_1),      }
+       \AttributeTok{ub =}\NormalTok{ pr\_0 }\SpecialCharTok{*}\FunctionTok{min}\NormalTok{(u\_bound\_0,u\_bound\_1) }\SpecialCharTok{+}\NormalTok{ pr\_1 }\SpecialCharTok{*}\NormalTok{ u\_bound\_1}
+\NormalTok{            ) }\SpecialCharTok{\%\textgreater{}\%} 
+     \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}} \FunctionTok{contains}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"\_0"}\NormalTok{,}\StringTok{"\_1"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# removing uneeded variables}
+    \FunctionTok{pivot\_wider}\NormalTok{(}
+      \AttributeTok{values\_from =}\NormalTok{ lb}\SpecialCharTok{:}\NormalTok{ub,}
+      \AttributeTok{names\_from =}\NormalTok{ attendc}
+\NormalTok{    ) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{mutate}\NormalTok{(}\AttributeTok{pop =} \StringTok{"Entire Sample"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+For comparison, I will do the same calculation for sub populations:
+black and white people.
+
+let \(w \in W\) be a vector of covarients, in this example
+\(W = \{black,white\}\), the calculation is the same but this time the
+probabilities and expectations are conditional on \(w\).
+
+\[ LB(t,w) \equiv \sum_{u \in V}[P(v = u|w)\cdot   \max_{u_1 \le u} \underline{b}(t,u_1,w)]\\
+UB(t,w) \equiv \sum_{u \in V}[P(v = u|w)\cdot   \min_{u \le u_2}\bar{b}(t,u_2,w)]
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{miv\_bounds }\OtherTok{\textless{}{-}}\NormalTok{ MIV\_bounds\_all\_pop }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\# this df is for storing the bounds}
+  \FunctionTok{bind\_rows}\NormalTok{(MIV\_bounds\_only\_blacks,MIV\_bounds\_only\_whites)}
+
+\NormalTok{miv\_bounds\_plot }\OtherTok{\textless{}{-}}\NormalTok{ miv\_bounds }\SpecialCharTok{\%\textgreater{}\%}   \CommentTok{\# this df is for storing the bounds, in a way good for plotting}
+  \FunctionTok{pivot\_longer}\NormalTok{(}\AttributeTok{cols =} \SpecialCharTok{!}\StringTok{"pop"}\NormalTok{,}
+               \AttributeTok{names\_to =} \FunctionTok{c}\NormalTok{(}\StringTok{".value"}\NormalTok{,}\StringTok{"treatment"}\NormalTok{),}
+               \AttributeTok{names\_pattern =} \StringTok{"(.*)\_(.)"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}  
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{treatment =} \FunctionTok{factor}\NormalTok{(treatment,}\AttributeTok{levels=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{), }\AttributeTok{labels=}\FunctionTok{c}\NormalTok{(}\StringTok{"Didn\textquotesingle{}t attend collage"}\NormalTok{, }\StringTok{"Attend collage"}\NormalTok{)))}
+         
+\NormalTok{miv\_bounds\_plot }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}
+  \AttributeTok{x =}\NormalTok{ pop)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_errorbar}\NormalTok{(}\AttributeTok{width =} \FloatTok{0.2}\NormalTok{, }\FunctionTok{aes}\NormalTok{(}
+    \AttributeTok{ymin =}\NormalTok{ lb,}
+    \AttributeTok{ymax =}\NormalTok{ ub,}
+    \AttributeTok{colour =}\NormalTok{ treatment),}
+    \AttributeTok{position =} \StringTok{"dodge"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Subpopulation"}\NormalTok{, }\AttributeTok{y =} \StringTok{"E[lwage|attenc]"}\NormalTok{, }\AttributeTok{color =} \StringTok{"Treatment"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-19-1..svg}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{miv\_te  }\OtherTok{\textless{}{-}}\NormalTok{  miv\_bounds }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{group\_by}\NormalTok{(pop) }\SpecialCharTok{\%\textgreater{}\%}  \CommentTok{\#calculating treatmnet effects}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{min\_te =}\NormalTok{ ub\_0 }\SpecialCharTok{{-}}\NormalTok{ lb\_1,}
+            \AttributeTok{max\_te =}\NormalTok{ ub\_1 }\SpecialCharTok{{-}}\NormalTok{ lb\_0)}
+
+\NormalTok{miv\_te }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ pop)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_errorbar}\NormalTok{(}\AttributeTok{width =} \FloatTok{0.2}\NormalTok{, }\FunctionTok{aes}\NormalTok{(}
+    \AttributeTok{ymin =}\NormalTok{ min\_te,}
+    \AttributeTok{ymax =}\NormalTok{ max\_te),}
+    \AttributeTok{color =} \StringTok{"red"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{( }\AttributeTok{x=} \StringTok{"Population"}\NormalTok{, }\AttributeTok{y =} \StringTok{"TE(t|w)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ps2_iv_card_schholing_files/figure-latex/unnamed-chunk-20-1..svg}
+
+\hypertarget{discussion-1}{%
+\subsubsection{Discussion}\label{discussion-1}}
+
+We obtained nonparaetric bounds on the ATE for two sub populations.
+
+We can see that the return for going to collage is strictly positive for
+all subgroups, and that the segment in which the TE lies is bigger for
+blacks then for whites. This corresponds to the assumption that the
+process determining wages is sensitive to race (throw discrimination,
+profession selection. etc.) as well as to education.
+
+\end{document}
